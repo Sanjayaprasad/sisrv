@@ -1,0 +1,27 @@
+{
+  "name": "demoproject",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongojs": "^2.4.0",
+    "mongoose": "^4.9.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "1.0.0",
+  "description": "full stack javascript application",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanjayaprasad/demoapp.git"
+  },
+  "author": "siqindia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sanjayaprasad/demoapp/issues"
+  },
+  "homepage": "https://github.com/Sanjayaprasad/demoapp#readme"
+}

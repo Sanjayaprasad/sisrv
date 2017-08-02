@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+<head>
+	<title> Demo Application </title>
+</head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<body>
+	<div class="container" ng-controller="appController">
+	<h1>Demo Application</h1>
+		<table class = "table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>USN</th>
+					<th>Semester</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input class='form-control' ng-model = "name.studentname"></td>
+					<td><input class='form-control' ng-model = "name.studentusn"></td>
+					<td><input class='form-control' ng-model = "name.studentsemester"></td>
+					<td><button class="btn btn-primary" ng-click="add()">Add Item</td>
+				</tr>
+				<tr ng-repeat = "name in informationSystem">
+					<td>{{name.studentname}}</td>
+					<td>{{name.studentusn}}</td>
+					<td>{{name.studentsemester}}</td>
+					<td><button class = "btn btn-danger" ng-click="remove(id)">Remove</td>
+				</tr>
+			</tbody>
+		</table>
+
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+	<script src = "controllers/controller.js"></script>
+</body>
+</html>
